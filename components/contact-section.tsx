@@ -4,11 +4,11 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20" style={{ backgroundColor: "#255498" }}>
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Contact Us</h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#ffffff" }}>Contact Us</h2>
+          <p className="max-w-2xl mx-auto" style={{ color: "#e87e13" }}>
             Ready to launch your next campaign? Get in touch with our team.
           </p>
           <div className="w-24 h-1 bg-secondary mx-auto mt-4"></div>
