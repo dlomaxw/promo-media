@@ -55,11 +55,11 @@ export function IndustryExpertise() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20" style={{ backgroundColor: "#255498" }}>
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Industry Expertise</h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#f6f7f9" }}>Industry Expertise</h2>
+          <p className="max-w-2xl mx-auto" style={{ color: "#dc960d" }}>
             We serve diverse industries across Uganda with specialized advertising and branding solutions.
           </p>
           <div className="w-24 h-1 bg-secondary mx-auto mt-4"></div>
