@@ -210,8 +210,8 @@ export function GallerySection() {
   }
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container" style={{ backgroundColor: "#255498", padding: "3rem" }}>
+    <section className="py-20" style={{ backgroundColor: "#255498" }}>
+      <div className="container">
         <FadeIn direction="up">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#f6f6f7" }}>Our Work Gallery</h2>

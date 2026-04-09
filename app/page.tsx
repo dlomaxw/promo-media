@@ -35,8 +35,8 @@ export default function Home() {
       <TeamSection />
       <ClientsSection />
       {/* Contact Section with Form */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="container" style={{ backgroundColor: "#255498", padding: "3rem" }}>
+      <section id="contact" className="py-20" style={{ backgroundColor: "#255498" }}>
+        <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#ffffff" }}>Contact Us</h2>
             <p className="max-w-2xl mx-auto" style={{ color: "#e87e13" }}>
@@ -97,19 +97,19 @@ export default function Home() {
               </div>
 
               <div className="bg-primary/5 p-6 rounded-lg">
-                <h3 className="text-lg font-bold text-primary mb-3">Office Hours</h3>
-                <div className="space-y-2 text-sm text-gray-700">
+                <h3 className="text-lg font-bold mb-3" style={{ color: "#edeef1" }}>Office Hours</h3>
+                <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span>Monday - Friday:</span>
-                    <span>8:00 AM - 6:00 PM</span>
+                    <span style={{ color: "#eff2f5" }}>Monday - Friday:</span>
+                    <span style={{ color: "#bc7e22" }}>8:00 AM - 6:00 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Saturday:</span>
-                    <span>9:00 AM - 4:00 PM</span>
+                    <span style={{ color: "#f4f7fb" }}>Saturday:</span>
+                    <span style={{ color: "#be8119" }}>9:00 AM - 4:00 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Sunday:</span>
-                    <span>Closed</span>
+                    <span style={{ color: "#f5f5f5" }}>Sunday:</span>
+                    <span style={{ color: "#d39c1c" }}>Closed</span>
                   </div>
                 </div>
               </div>
