@@ -72,11 +72,22 @@ const config = {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "logo-glow": {
+          "0%": { opacity: "0.5", transform: "scale(0.95)" },
+          "50%": { opacity: "1", transform: "scale(1.02)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        "logo-shine": {
+          "0%": { backgroundPosition: "-1000px 0" },
+          "100%": { backgroundPosition: "1000px 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         marquee: "marquee 50s linear infinite",
+        "logo-glow": "logo-glow 0.8s ease-out forwards",
+        "logo-shine": "logo-shine 3s ease-in-out infinite",
       },
     },
   },
