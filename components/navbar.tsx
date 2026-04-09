@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { AnimatedLogo } from "@/components/animated-logo"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,7 +17,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/images/logo.png" alt="Primax Advertising Logo" width={180} height={60} className="h-auto" />
+          <AnimatedLogo />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
