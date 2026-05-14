@@ -1,8 +1,8 @@
 import { redirect } from "next/navigation"
 import { createClient } from "@/lib/supabase/server"
-import { AdminDashboard } from "@/components/admin/admin-dashboard"
+import { UserDashboard } from "@/components/dashboard/user-dashboard"
 
-export default async function AdminPage() {
+export default async function DashboardPage() {
   const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
@@ -11,41 +11,38 @@ export default async function AdminPage() {
     redirect("/auth/login")
   }
 
-  // Check if user is admin
+  // Get user profile
   const { data: profile } = await supabase
     .from("profiles")
-    .select("role")
+    .select("*")
     .eq("id", user.id)
     .single()
 
-  if (profile?.role !== "admin") {
-    redirect("/dashboard")
+  // If user is admin, redirect to admin dashboard
+  if (profile?.role === "admin") {
+    redirect("/admin")
   }
 
-  // Fetch all quotes
+  // Fetch user's quotes
   const { data: quotes } = await supabase
     .from("quotes")
     .select("*")
+    .eq("email", user.email)
     .order("created_at", { ascending: false })
 
-  // Fetch all users
-  const { data: users } = await supabase
-    .from("profiles")
-    .select("*")
-    .order("created_at", { ascending: false })
-
-  // Fetch all projects
+  // Fetch user's projects
   const { data: projects } = await supabase
     .from("projects")
     .select("*")
+    .eq("user_id", user.id)
     .order("created_at", { ascending: false })
 
   return (
-    <AdminDashboard 
+    <UserDashboard 
+      user={user}
+      profile={profile}
       quotes={quotes || []} 
-      users={users || []} 
       projects={projects || []}
-      currentUser={user}
     />
   )
 }
