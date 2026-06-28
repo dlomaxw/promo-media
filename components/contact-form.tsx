@@ -61,10 +61,10 @@ export function ContactForm() {
           Tell us about your project and we'll create a custom proposal for you.
         </p>
       </CardHeader>
-      <CardContent>
+      <CardContent suppressHydrationWarning>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-4">
-            <div>
+            <div suppressHydrationWarning>
               <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
               <Input
                 required
@@ -73,7 +73,7 @@ export function ContactForm() {
                 placeholder="Your full name"
               />
             </div>
-            <div>
+            <div suppressHydrationWarning>
               <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
               <Input
                 type="email"
@@ -86,7 +86,7 @@ export function ContactForm() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
-            <div>
+            <div suppressHydrationWarning>
               <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
               <Input
                 value={formData.phone}
@@ -94,7 +94,7 @@ export function ContactForm() {
                 placeholder="+256 XXX XXX XXX"
               />
             </div>
-            <div>
+            <div suppressHydrationWarning>
               <label className="block text-sm font-medium text-gray-700 mb-2">Company/Organization</label>
               <Input
                 value={formData.company}
@@ -105,7 +105,7 @@ export function ContactForm() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
-            <div>
+            <div suppressHydrationWarning>
               <label className="block text-sm font-medium text-gray-700 mb-2">Service Type *</label>
               <Select onValueChange={(value) => handleInputChange("serviceType", value)}>
                 <SelectTrigger>
@@ -122,7 +122,7 @@ export function ContactForm() {
                 </SelectContent>
               </Select>
             </div>
-            <div>
+            <div suppressHydrationWarning>
               <label className="block text-sm font-medium text-gray-700 mb-2">Budget Range</label>
               <Select onValueChange={(value) => handleInputChange("budget", value)}>
                 <SelectTrigger>
@@ -139,7 +139,7 @@ export function ContactForm() {
             </div>
           </div>
 
-          <div>
+          <div suppressHydrationWarning>
             <label className="block text-sm font-medium text-gray-700 mb-2">Project Details *</label>
             <Textarea
               required
@@ -150,7 +150,7 @@ export function ContactForm() {
             />
           </div>
 
-          <div className="flex items-center space-x-2">
+          <div suppressHydrationWarning className="flex items-center space-x-2">
             <Checkbox
               id="newsletter"
               checked={formData.newsletter}
