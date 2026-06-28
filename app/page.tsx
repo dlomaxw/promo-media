@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
@@ -17,6 +18,19 @@ import { Mail, MapPin, Phone } from "lucide-react"
 import { IndustryExpertise } from "@/components/industry-expertise"
 import { CapabilitiesSection } from "@/components/capabilities-section"
 import { HSESection } from "@/components/hse-section"
+
+export const metadata: Metadata = {
+  title: 'Primax - Outdoor Advertising & Marketing Solutions in Uganda',
+  description: 'Primax is Uganda\'s leading outdoor advertising and experiential marketing company. We offer 3D cinema experiences, school activations, corporate events, branding, and innovative media solutions.',
+  keywords: ['outdoor advertising Uganda', 'advertising agency Kampala', 'branding solutions Uganda', 'experiential marketing', 'event marketing Uganda', 'school activations', 'corporate events Uganda', '3D cinema', 'media company Uganda'],
+  openGraph: {
+    title: 'Primax - Outdoor Advertising & Marketing Solutions in Uganda',
+    description: 'Uganda\'s premier advertising agency offering innovative outdoor advertising, experiential marketing, branding, and media solutions.',
+    type: 'website',
+    locale: 'en_UG',
+    url: 'https://primaxadvertising.com',
+  },
+}
 
 export default function Home() {
   return (
