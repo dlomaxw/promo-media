@@ -16,6 +16,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Mail, MapPin, Phone } from "lucide-react"
 import { IndustryExpertise } from "@/components/industry-expertise"
 import { CapabilitiesSection } from "@/components/capabilities-section"
+import { HSESection } from "@/components/hse-section"
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <TestimonialsSection />
       <TeamSection />
       <ClientsSection />
+      <HSESection />
       {/* Contact Section with Form */}
       <section id="contact" className="py-20" style={{ backgroundColor: "#255498" }}>
         <div className="container">

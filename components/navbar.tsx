@@ -33,6 +33,9 @@ export function Navbar() {
           <Link href="#events" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
             Events
           </Link>
+          <Link href="#hse" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
+            HSE
+          </Link>
           <Link href="/quote" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
             Get Quote
           </Link>
@@ -84,6 +87,13 @@ export function Navbar() {
               onClick={toggleMenu}
             >
               Events
+            </Link>
+            <Link
+              href="#hse"
+              className="block text-sm font-medium text-primary hover:text-secondary"
+              onClick={toggleMenu}
+            >
+              HSE
             </Link>
             <Link
               href="/quote"
