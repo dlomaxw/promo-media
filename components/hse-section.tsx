@@ -167,13 +167,13 @@ export function HSESection() {
             For detailed information on our comprehensive HSEQ policies, please download our official policy documents.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="/Primax-HSE-Policies.pdf" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1rPg4ZUPRB0ihrLMtTjJHd0SlEjG5OusS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
                 <Download className="mr-2 h-5 w-5" />
                 HSE Policies Document
               </Button>
             </a>
-            <a href="/HSSE-Policy-Statement.pdf" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1S0Y9LOjMq7U-HKS4k5FvhJ90sUObMObp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button className="bg-secondary hover:bg-secondary/90 text-white" size="lg">
                 <Download className="mr-2 h-5 w-5" />
                 HSSE Policy Statement
