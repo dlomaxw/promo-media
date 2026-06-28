@@ -51,42 +51,53 @@ export function ServicesSection() {
       <div className="container">
         <FadeIn direction="up">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Services</h2>
-            <p className="text-gray-700 max-w-2xl mx-auto">
-              Comprehensive advertising and experiential marketing solutions tailored for Uganda's youth market.
+            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Advertising & Marketing Services</h1>
+            <p className="text-gray-700 max-w-2xl mx-auto text-lg">
+              Comprehensive outdoor advertising and experiential marketing solutions tailored for Uganda's youth market. From branding to technical installations, we deliver innovative solutions across Kampala and Uganda.
             </p>
             <div className="w-24 h-1 bg-secondary mx-auto mt-4"></div>
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8" role="list">
           {services.map((service, index) => (
             <FadeIn key={index} delay={index * 150} direction="up" className="h-full">
-              <Card className="shadow-md hover:shadow-lg transition-shadow overflow-hidden h-full">
+              <article 
+                className="shadow-md hover:shadow-lg transition-shadow overflow-hidden h-full rounded-lg"
+                role="listitem"
+                itemScope
+                itemType="https://schema.org/Service"
+              >
                 <div className="relative h-48">
-                  <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+                  <Image 
+                    src={service.image || "/placeholder.svg"} 
+                    alt={`${service.title} - Primax Advertising Uganda`}
+                    fill 
+                    className="object-cover" 
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                      <h2 className="text-xl font-bold text-white mb-2" itemProp="name">{service.title}</h2>
                     </div>
                   </div>
                 </div>
-                <CardContent className="p-6">
+                <div className="p-6">
                   <div className="flex items-start">
-                    <div className="mr-4 mt-1">{service.icon}</div>
+                    <div className="mr-4 mt-1" aria-hidden="true">{service.icon}</div>
                     <div>
-                      <ul className="space-y-2">
+                      <h3 className="font-semibold text-gray-900 mb-3 text-sm uppercase tracking-wide">Key Features</h3>
+                      <ul className="space-y-2" itemProp="areaServed">
                         {service.items.map((item, idx) => (
                           <li key={idx} className="flex items-center">
-                            <span className="h-1.5 w-1.5 rounded-full bg-secondary mr-2"></span>
+                            <span className="h-1.5 w-1.5 rounded-full bg-secondary mr-2" aria-hidden="true"></span>
                             <span className="text-gray-700">{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </article>
             </FadeIn>
           ))}
         </div>

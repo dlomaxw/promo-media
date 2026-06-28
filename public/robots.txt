@@ -1,0 +1,25 @@
+# Allow all robots
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://primaxadvertising.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Block specific files
+Disallow: /private/
+Disallow: /.git/
+Disallow: /admin/
+Disallow: *.pdf$
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

@@ -1,0 +1,95 @@
+{
+  "company": {
+    "name": "Primax Advertising",
+    "description": "Uganda's leading outdoor advertising and experiential marketing company",
+    "url": "https://primaxadvertising.com",
+    "logo": "https://primaxadvertising.com/logo.png",
+    "email": "primaxoutdooradvertising@gmail.com",
+    "phone": "+256 766 808 484",
+    "address": "Kampala, Uganda",
+    "foundedYear": 2015,
+    "sameAs": [
+      "https://www.facebook.com/primaxadvertising",
+      "https://www.instagram.com/primaxadvertising",
+      "https://www.linkedin.com/company/primax-advertising",
+      "https://www.tiktok.com/@primaxadvertising"
+    ]
+  },
+  "services": [
+    {
+      "id": "branding-marketing",
+      "name": "Branding & Marketing",
+      "title": "Branding & Marketing Solutions | Primax Advertising Uganda",
+      "description": "Professional branding and marketing services including building facade branding, corporate identity solutions, large format printing, and point of sale displays.",
+      "keywords": ["branding Uganda", "corporate identity", "facade branding", "marketing solutions", "large format printing"],
+      "features": [
+        "Building facade branding",
+        "Corporate identity solutions",
+        "Large format printing",
+        "Point of sale display materials"
+      ]
+    },
+    {
+      "id": "service-stations",
+      "name": "Service Station Solutions",
+      "title": "Service Station Branding & Solutions | Primax Uganda",
+      "description": "Complete service station branding and installation services including fuel station branding, MotoCare service bay setup, and convenience store branding.",
+      "keywords": ["service station branding", "fuel station solutions", "MotoCare branding", "service station design"],
+      "features": [
+        "Complete service station branding",
+        "Fuel station installations",
+        "MotoCare service bay setup",
+        "Convenience store branding"
+      ]
+    },
+    {
+      "id": "educational-partnerships",
+      "name": "Educational Institution Partnerships",
+      "title": "School Activations & Educational Marketing | Primax Uganda",
+      "description": "Educational institution partnerships including school signage solutions, payment integration systems, campus branding, and educational campaigns.",
+      "keywords": ["school activations", "educational marketing", "school signage", "campus branding"],
+      "features": [
+        "School signage solutions",
+        "Payment integration systems",
+        "Campus branding",
+        "Educational campaigns"
+      ]
+    },
+    {
+      "id": "technical-installations",
+      "name": "Technical Installations",
+      "title": "Technical Installation Services | Primax Advertising Uganda",
+      "description": "Professional technical installation services including DSTV satellite installations, safety storage solutions, parking management systems, and custom technical solutions.",
+      "keywords": ["DSTV installation", "parking management", "technical solutions", "safety storage"],
+      "features": [
+        "DSTV satellite installations",
+        "Safety storage solutions",
+        "Parking management systems",
+        "Custom technical solutions"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Primax - Outdoor Advertising & Marketing Solutions in Uganda",
+      "description": "Uganda's premier outdoor advertising and experiential marketing company offering 3D cinema experiences, school activations, corporate events, branding, and innovative media solutions.",
+      "keywords": ["outdoor advertising Uganda", "advertising agency Kampala", "experiential marketing", "school activations"]
+    },
+    {
+      "path": "/#services",
+      "title": "Our Services - Primax Advertising",
+      "description": "Explore our comprehensive advertising and marketing services tailored for Uganda's market"
+    },
+    {
+      "path": "/#portfolio",
+      "title": "Portfolio & Case Studies - Primax Advertising",
+      "description": "View our successful advertising campaigns and projects across Uganda"
+    },
+    {
+      "path": "/#hse",
+      "title": "HSEQ Policies - Primax Advertising",
+      "description": "Learn about our Health, Safety, Environment, and Quality commitment"
+    }
+  ]
+}
