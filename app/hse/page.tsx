@@ -2,9 +2,8 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Download, FileText } from 'lucide-react'
+
+
 
 export const metadata: Metadata = {
   title: 'HSEQ Policies - Primax Outdoor Advertising',
@@ -208,57 +207,7 @@ export default function HSEPage() {
         </div>
       </section>
 
-      {/* Document Download Section */}
-      <section className="bg-gradient-to-b from-primary/5 to-secondary/5 py-16 md:py-24">
-        <div className="container max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Download Full Policy Documents</h2>
-          <p className="text-lg text-gray-700 mb-12">
-            Access our comprehensive HSEQ policy documents directly from our official sources. These documents detail our complete commitment to health, safety, environment, and quality standards.
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <a href="https://drive.google.com/file/d/1rPg4ZUPRB0ihrLMtTjJHd0SlEjG5OusS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <Card className="hover:shadow-lg transition-all hover:scale-105 h-full flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <FileText className="h-6 w-6 text-primary" />
-                    <CardTitle>Complete HSE Policies</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-gray-700 mb-4">
-                    Full HSEQ policy document containing all organizational policies and procedures.
-                  </p>
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                    <Download className="mr-2 h-4 w-4" />
-                    View & Download
-                  </Button>
-                </CardContent>
-              </Card>
-            </a>
 
-            <a href="https://drive.google.com/file/d/1S0Y9LOjMq7U-HKS4k5FvhJ90sUObMObp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <Card className="hover:shadow-lg transition-all hover:scale-105 h-full flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <FileText className="h-6 w-6 text-secondary" />
-                    <CardTitle>Policy Statement</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-gray-700 mb-4">
-                    HSSE policy statement write-up detailing our commitment and implementation strategies.
-                  </p>
-                  <Button className="w-full bg-secondary hover:bg-secondary/90 text-white">
-                    <Download className="mr-2 h-4 w-4" />
-                    View & Download
-                  </Button>
-                </CardContent>
-              </Card>
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section className="py-16 md:py-24 bg-white">
