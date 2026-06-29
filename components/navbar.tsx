@@ -33,8 +33,8 @@ export function Navbar() {
           <Link href="#events" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
             Events
           </Link>
-          <Link href="#hse" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
-            HSE
+          <Link href="/hse" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
+            HSEQ Policies
           </Link>
           <Link href="/quote" className="text-sm font-medium text-primary hover:text-secondary transition-colors">
             Get Quote
@@ -89,11 +89,11 @@ export function Navbar() {
               Events
             </Link>
             <Link
-              href="#hse"
+              href="/hse"
               className="block text-sm font-medium text-primary hover:text-secondary"
               onClick={toggleMenu}
             >
-              HSE
+              HSEQ Policies
             </Link>
             <Link
               href="/quote"

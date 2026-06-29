@@ -161,25 +161,16 @@ export function HSESection() {
           </Card>
         </div>
 
-        {/* PDF Download Section */}
+        {/* CTA Section */}
         <div className="text-center">
-          <p className="text-gray-700 mb-8">
-            For detailed information on our comprehensive HSEQ policies, please download our official policy documents.
+          <p className="text-gray-700 mb-8 text-lg">
+            Explore our comprehensive HSEQ policies and see how we maintain the highest standards of safety, quality, and environmental responsibility.
           </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="https://drive.google.com/file/d/1rPg4ZUPRB0ihrLMtTjJHd0SlEjG5OusS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
-                <Download className="mr-2 h-5 w-5" />
-                HSE Policies Document
-              </Button>
-            </a>
-            <a href="https://drive.google.com/file/d/1S0Y9LOjMq7U-HKS4k5FvhJ90sUObMObp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-secondary hover:bg-secondary/90 text-white" size="lg">
-                <Download className="mr-2 h-5 w-5" />
-                HSSE Policy Statement
-              </Button>
-            </a>
-          </div>
+          <a href="/hse">
+            <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
+              View Our HSEQ Policies
+            </Button>
+          </a>
         </div>
       </div>
     </section>
