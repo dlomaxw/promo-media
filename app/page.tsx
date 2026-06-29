@@ -8,7 +8,6 @@ import { WhyChooseUs } from "@/components/why-choose-us"
 import { ClientsSection } from "@/components/clients-section"
 import { Footer } from "@/components/footer"
 import { PortfolioSection } from "@/components/portfolio-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
 import { ContactForm } from "@/components/contact-form"
 import { StatsSection } from "@/components/stats-section"
 import { TeamSection } from "@/components/team-section"
@@ -46,7 +45,6 @@ export default function Home() {
       <PortfolioSection />
       <GallerySection />
       <StatsSection />
-      <TestimonialsSection />
       <TeamSection />
       <ClientsSection />
       <HSESection />
