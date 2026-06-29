@@ -3,223 +3,113 @@ import Image from 'next/image'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
-
-
 export const metadata: Metadata = {
   title: 'HSEQ Policies - Primax Outdoor Advertising',
-  description: 'Primax&apos;s comprehensive Health, Safety, Environment & Quality policies ensuring safe operations and environmental responsibility in Uganda.',
+  description: "Primax's comprehensive Health, Safety, Environment & Quality policies ensuring safe operations and environmental responsibility in Uganda.",
   keywords: ['HSEQ policies', 'health and safety', 'environmental policy', 'PPE policy', 'waste management', 'quality policy'],
 }
 
-export default function HSEPage() {
-  const policies = [
-    {
-      title: 'Health, Safety, Security & Environment Policy',
-      id: 'POA/HSEQ-POL/001',
-      description: 'Our commitment to carrying out all operations with the greatest regard for the health and safety of all workers and environmental conservation.',
-      imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0001-lYqBlGt2OaZBZ9vvmef3YZ0D79cQ7f.jpg',
-      highlights: [
-        'Safe working conditions for staff and public',
-        'Injury prevention through improved practices',
-        'Health and safety program manual',
-        'Routine site inspections and checks',
-        'Environmental conservation commitment'
-      ]
-    },
-    {
-      title: 'Environmental Policy',
-      id: 'POA/HSEQ-POL/002',
-      description: 'Primax&apos;s commitment to environmental protection through efficient resource use, waste minimization, and stakeholder engagement.',
-      imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0002-tFZLpqcNHq32ISCGlMmlZ5uvJQPSQA.jpg',
-      highlights: [
-        'Operating in manner that protects the environment',
-        'Efficient use of material and energy resources',
-        'Influencing employees and stakeholders on environmental commitment',
-        'Identifying and mitigating environmental impacts',
-        'Setting environmental protection targets',
-        'Minimal impact work methodologies'
-      ]
-    },
-    {
-      title: 'Drug & Alcohol Policy',
-      id: 'POA/HSEQ-POL/003',
-      description: 'Zero tolerance substance policy ensuring a safe and drug-free workplace for all employees and stakeholders.',
-      imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0003-B6YazzLduNhkYa8ucO9xdT2MATkpjo.jpg',
-      highlights: [
-        'Workplace free from alcohol and drug abuse',
-        'No tolerance for substance abuse',
-        'Disciplinary action for violations',
-        'Random testing procedures',
-        'Resource commitment to eliminate substance abuse',
-        'Employee responsibility to report fit for duty'
-      ]
-    },
-    {
-      title: 'Personal Protective Equipment (PPE) Policy',
-      id: 'POA/HSEQ-POL/004',
-      description: 'Comprehensive PPE policy protecting employees from occupational injuries and illness through appropriate equipment and training.',
-      imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0004-WamZpDmwZlBZ9vvmef3YZ0D79cQ7f.jpg',
-      highlights: [
-        'Industry-recognized PPE standards compliance',
-        'Employee training on correct PPE use',
-        'Job-specific hazard assessment',
-        'Appropriate PPE provision',
-        'Correct usage enforcement',
-        'Disciplinary action for non-compliance'
-      ]
-    },
-    {
-      title: 'Quality Policy',
-      id: 'POA/HSEQ-POL/005',
-      description: 'Commitment to delivering high-quality services aligned with organizational goals and client expectations.',
-      imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0005-06BuLA4Ap5GeE4QLnp0mb1ZaWPqHEP.jpg',
-      highlights: [
-        'High and consistent quality to clients',
-        'Client needs and expectations fulfillment',
-        'Timely project completion',
-        'Material wastage minimization',
-        'Quality problem reduction',
-        'Quality, Environmental, Health & Safety integration'
-      ]
-    },
-    {
-      title: 'Waste Management Policy',
-      id: 'POA/HSEQ-POL/006',
-      description: 'Strategic waste management approach minimizing environmental impact through reduction, reuse, and recycling.',
-      imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0006-bhEX8AGOfNzQnPxpe3L8dnex15Gg6x.jpg',
-      highlights: [
-        'Waste generation avoidance and reduction',
-        'Waste reuse and recycling initiatives',
-        'Lifecycle information in procurement',
-        'Efficient material and resource usage',
-        'Waste stream monitoring and reporting',
-        'Waste reduction targets setting'
-      ]
-    }
-  ]
+const policies = [
+  {
+    title: 'Health, Safety, Security & Environment Policy',
+    id: 'POA/HSEQ-POL/001',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0001-DC4LiHKLuSzr6MDmWm3Gi949EDLRPf.jpg',
+  },
+  {
+    title: 'Environmental Policy',
+    id: 'POA/HSEQ-POL/002',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0002-3wo9qXvRe9Kxvr2LA5LLlrGbOvQz5x.jpg',
+  },
+  {
+    title: 'Drug & Alcohol Policy',
+    id: 'POA/HSEQ-POL/003',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0003-wwIBZVoB4jBh0ZaNvk126SAu5wIOBz.jpg',
+  },
+  {
+    title: 'Personal Protective Equipment (PPE) Policy',
+    id: 'POA/HSEQ-POL/004',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0004-vkAI9tiM1VsBlmpGHNRA7kh67Xtjyo.jpg',
+  },
+  {
+    title: 'Quality Policy',
+    id: 'POA/HSEQ-POL/005',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0005-BEEFCUbro7YCP5lLke8IzSHGUBWii0.jpg',
+  },
+  {
+    title: 'Waste Management Policy',
+    id: 'POA/HSEQ-POL/006',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Primax%20HSE%20Policies_page-0006-Lh2NvD7LTJB8TvSVrl9pivM1XZr6iH.jpg',
+  },
+]
 
+export default function HSEPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gray-50">
       <Navbar />
-      
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/80 text-white py-16 md:py-24">
+
+      {/* Hero */}
+      <section className="bg-primary text-white py-16 md:py-20">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">HSEQ Policies</h1>
-          <p className="text-xl opacity-90 max-w-2xl">
-            Comprehensive Health, Safety, Environment & Quality policies ensuring safe, sustainable operations and exceptional service quality.
+          <p className="text-lg md:text-xl opacity-90 max-w-2xl leading-relaxed">
+            Health, Safety, Environment &amp; Quality policies governing all operations at Primax Outdoor Advertising.
           </p>
         </div>
       </section>
 
-      {/* Introduction */}
-      <section className="py-12 md:py-16 bg-gray-50">
+      {/* Intro */}
+      <section className="py-10 bg-white">
         <div className="container max-w-4xl">
-          <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-secondary">
-            <h2 className="text-2xl font-bold mb-4 text-primary">Our HSEQ Commitment</h2>
-            <p className="text-gray-700 mb-4 text-lg leading-relaxed">
-              At Primax Outdoor Advertising, health, safety, environment, and quality are not afterthoughts—they are integrated into every operation. We carry out all our work—from large-scale branding and fabrication to high-altitude signage installation—with an uncompromising commitment to protecting our workforce, clients, the public, and our environment.
+          <div className="border-l-4 border-secondary pl-6">
+            <p className="text-gray-700 text-lg leading-relaxed mb-3">
+              At Primax Outdoor Advertising, health, safety, environment and quality are integrated into every operation. Our HSEQ framework comprises six structured policy directives ensuring continuous improvement, legal compliance, and a proactive safety culture across all levels of the organisation.
             </p>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              Led by Managing Director Huzair Mukalazi, our HSEQ framework comprises six structured policy directives that ensure continuous improvement, compliance with applicable laws, and a proactive safety culture.
-            </p>
+            <p className="text-sm text-gray-500 font-medium">Signed by: Huzair Mukalazi, Managing Director &mdash; 10th January 2026</p>
           </div>
         </div>
       </section>
 
-      {/* Policies Grid */}
-      <section className="py-16 md:py-24">
-        <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-primary">Our Six Policy Pillars</h2>
-          
-          <div className="space-y-12">
-            {policies.map((policy, index) => (
-              <div key={index} className="grid md:grid-cols-2 gap-8 items-start">
-                {/* Alternate layout for visual interest */}
-                {index % 2 === 0 ? (
-                  <>
-                    <div>
-                      <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-                        <Image
-                          src={policy.imageUrl}
-                          alt={policy.title}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <div className="bg-white p-8 rounded-lg shadow-md h-full">
-                        <div className="text-sm font-semibold text-secondary mb-2">{policy.id}</div>
-                        <h3 className="text-2xl font-bold text-primary mb-3">{policy.title}</h3>
-                        <p className="text-gray-700 mb-6 leading-relaxed">{policy.description}</p>
-                        
-                        <div className="mb-6">
-                          <h4 className="font-semibold text-gray-900 mb-3">Key Points:</h4>
-                          <ul className="space-y-2">
-                            {policy.highlights.map((highlight, idx) => (
-                              <li key={idx} className="flex items-start gap-2">
-                                <span className="h-2 w-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                                <span className="text-gray-700">{highlight}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div>
-                      <div className="bg-white p-8 rounded-lg shadow-md h-full">
-                        <div className="text-sm font-semibold text-secondary mb-2">{policy.id}</div>
-                        <h3 className="text-2xl font-bold text-primary mb-3">{policy.title}</h3>
-                        <p className="text-gray-700 mb-6 leading-relaxed">{policy.description}</p>
-                        
-                        <div className="mb-6">
-                          <h4 className="font-semibold text-gray-900 mb-3">Key Points:</h4>
-                          <ul className="space-y-2">
-                            {policy.highlights.map((highlight, idx) => (
-                              <li key={idx} className="flex items-start gap-2">
-                                <span className="h-2 w-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                                <span className="text-gray-700">{highlight}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-                        <Image
-                          src={policy.imageUrl}
-                          alt={policy.title}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                  </>
-                )}
+      {/* Policy Documents — full visible images stacked */}
+      <section className="py-12">
+        <div className="container max-w-4xl">
+          <div className="space-y-10">
+            {policies.map((policy) => (
+              <div key={policy.id} className="bg-white rounded-xl shadow-md overflow-hidden">
+                {/* Label bar */}
+                <div className="flex items-center justify-between px-6 py-3 bg-primary">
+                  <h2 className="text-white font-semibold text-base md:text-lg">{policy.title}</h2>
+                  <span className="text-white/70 text-sm font-mono">{policy.id}</span>
+                </div>
+                {/* Full policy image — unclipped, natural aspect ratio */}
+                <div className="w-full">
+                  <Image
+                    src={policy.imageUrl}
+                    alt={`${policy.title} — ${policy.id}`}
+                    width={1240}
+                    height={1754}
+                    className="w-full h-auto"
+                    quality={100}
+                    priority={policy.id === 'POA/HSEQ-POL/001'}
+                  />
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-
-
-      {/* Contact Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container max-w-3xl text-center">
-          <h2 className="text-3xl font-bold mb-6 text-primary">Questions About Our HSEQ Policies?</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Our HSEQ team is dedicated to ensuring our operations meet the highest standards. For inquiries or more information about our policies, please contact us.
+      {/* Contact CTA */}
+      <section className="py-14 bg-white">
+        <div className="container max-w-2xl text-center">
+          <h2 className="text-2xl font-bold text-primary mb-4">Questions About Our HSEQ Policies?</h2>
+          <p className="text-gray-700 mb-6">
+            Contact our HSEQ team for any inquiries or further information about our policies and procedures.
           </p>
-          <a href="/#contact">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-              Contact Our Team
-            </Button>
+          <a
+            href="/#contact"
+            className="inline-block bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+          >
+            Contact Our Team
           </a>
         </div>
       </section>
