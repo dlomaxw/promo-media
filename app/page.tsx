@@ -10,7 +10,6 @@ import { Footer } from "@/components/footer"
 import { PortfolioSection } from "@/components/portfolio-section"
 import { ContactForm } from "@/components/contact-form"
 import { StatsSection } from "@/components/stats-section"
-import { TeamSection } from "@/components/team-section"
 import { GallerySection } from "@/components/gallery-section"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, MapPin, Phone } from "lucide-react"
@@ -45,7 +44,6 @@ export default function Home() {
       <PortfolioSection />
       <GallerySection />
       <StatsSection />
-      <TeamSection />
       <ClientsSection />
       <HSESection />
       {/* Contact Section with Form */}
